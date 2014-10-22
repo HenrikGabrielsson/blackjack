@@ -9,6 +9,7 @@ namespace BlackJack.model
     {
         private Deck m_deck = null;
         private int m_maxScore;
+        private List<IGetHandListener> m_subscribers;
 
         private rules.INewGameStrategy m_newGameRule;
         private rules.IHitStrategy m_hitRule;
@@ -21,6 +22,12 @@ namespace BlackJack.model
             m_hitRule = a_rulesFactory.GetHitRule();
             m_winnerRule = a_rulesFactory.GetWinnerRule();
             m_maxScore = m_winnerRule.GetMaxScore();
+            m_subscribers = new List<IGetHandListener>();
+        }
+
+        public void Register(IGetHandListener a_subscriber)
+        {
+            m_subscribers.Add(a_subscriber);
         }
 
         public bool NewGame(Player a_player)
@@ -68,7 +75,7 @@ namespace BlackJack.model
 
         public bool IsGameOver(Player a_player)
         {
-            if (m_deck != null && /*CalcScore() >= g_hitLimit*/ m_hitRule.DoHit(this) != true || IsDealerWinner(a_player))
+            if (m_deck != null && /*CalcScore() >= g_hitLimit*/ m_hitRule.DoHit(this) != true || a_player.CalcScore() > m_maxScore)
             {
                 return true;
             }
@@ -77,13 +84,16 @@ namespace BlackJack.model
 
         public void GiveCards(Player a_player, bool show = false)
         {
-            Card card;
-
-            card = m_deck.GetCard();
-            card.Show(show);
+            Card card = m_deck.GetCard();
+            
             a_player.DealCard(card);
+
+            card.Show(show);
+
+            foreach (var subscriber in m_subscribers)
+            {
+                subscriber.Notify();
+            }
         }
-
-
     }
 }

@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3a552345-d635-4039-9159-9bb30fd347ae" name="BlackJackDiagram" linkedPackageId="f5cb1417-511a-494a-aeba-09405b69bcbd" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="68d7c92f-08ee-48f5-abae-044578b26f22">
+      <profileInstance Id="74b2aead-97ff-4d0f-b9af-878a1262a8c8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cc02fb49-a9ab-44c9-a372-db7660e120d0">
+      <profileInstance Id="ada8f5fb-d670-420f-9347-5e85fd8adf1d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="f2667d75-0727-49e7-b279-4e7b87894c5c" name="model">
+        <elementDefinition Id="611d0dda-1055-4b6d-bca5-9dad81e292a9" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="cb5a73ba-d5e0-41b8-9003-aaced10eb299" name="Card" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a6713820-b5ef-4e7b-9982-6130438f8429" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="194bd4c4-f7c1-4ca2-bfa3-70731c70bce7" name="Deck" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="06cd8108-1c58-4959-aa2a-814dbf8ef652" />
+              <targetEnds>
+                <association Id="aa0c0f79-747a-484a-a497-2e0ffa181f8b" isDerived="false" sourceEndRoleName="" targetEndRoleName="m_cards" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="cb5a73ba-d5e0-41b8-9003-aaced10eb299" LastKnownName="Card" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="b27e0ea4-507d-480a-bbdd-018beb5d657b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="39dcbe9c-639b-42e1-bb3d-c99ca9ce1a36" name="Lower">
+                            <elementDefinition Id="a7369876-0c65-417b-bc50-e666d62ca6d8" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="2b341d16-b8fc-4f10-ace1-9ca7254b10c0" name="Upper">
+                            <elementDefinition Id="814fea2f-f990-40a2-8e99-bc85d0e1d859" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="4ff27d98-12da-4016-a7ae-37f26aa0306f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="b59e4f81-4fde-4cfe-94a1-0be76eda6dd1" name="m_cards" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="a491598a-7a36-46f1-8ed5-7845f6eb7b7d" name="Lower" value="*">
+                            <elementDefinition Id="68184897-a182-44eb-a1b7-70114606ae2d" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="9c1d37d4-e940-460e-9a7d-abf45adaa031" name="Upper" value="*">
+                            <elementDefinition Id="d55dd5e4-d5e3-406e-b9dc-f790093e57f5" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="23802c7d-416f-4d70-a8d0-5c4d4125ef49" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="24adb836-d430-4b7a-81c5-1f49dde7ccbd" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="17d07796-ec17-433a-b859-8d4baad9029f" name="Player" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e9cbcc72-94a8-4282-bffd-840431d0119d" />
+              <targetEnds>
+                <association Id="eadb4fa2-6a83-43a6-9560-92dc82e83eb4" isDerived="false" sourceEndRoleName="" targetEndRoleName="m_hand" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="cb5a73ba-d5e0-41b8-9003-aaced10eb299" LastKnownName="Card" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="b8393209-da69-4186-a8bb-8dd413005614" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="81bd27ac-47ae-4441-89b4-a7772e468e5f" name="Lower">
+                            <elementDefinition Id="0e8be051-0797-49d0-a006-6d94817e00cc" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="6c2ea4cf-6429-4b31-9da8-9e0efcbb95b7" name="Upper">
+                            <elementDefinition Id="91ebec7e-3334-452b-baaa-2b420fa48cc6" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="8eaf9a16-2e19-4190-b736-da4dd6eb663d" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8222a2ba-3fe5-4440-93e5-e2b418a07848" name="m_hand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="33d84411-3327-4e73-8ee7-e0902de3454c" name="Lower" value="*">
+                            <elementDefinition Id="92e56d54-9646-4619-b85b-d09a406ce071" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="27c2e857-7751-43c9-a994-056844750a7a" name="Upper" value="*">
+                            <elementDefinition Id="d3010703-37c3-4704-8434-871deea4a3a8" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="12ffe217-a58f-458b-b819-b3fe1c52fee2" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="4e104d3a-3dd0-4e57-b8cb-0ec9d65fa0ab" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="28a7a0af-e549-494b-bd86-3f7a7b3963f0" name="Dealer" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="aaf1cdbb-b246-4674-8bd7-c2ffcaeb6374" />
+              <suppliersInternal>
+                <dependency Id="08d41f14-0f3e-43e2-9030-46a19a8ef704">
+                  <classMoniker Id="6985f3f4-261a-4bb6-bcb9-7a968589c4bf" LastKnownName="RulesFactory" />
+                  <elementDefinition Id="ebcbd2dc-bbcb-4c6a-9cba-c8de4f9118c9" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="1597b562-a49e-435b-92f8-a318ea598889" isSubstitutable="false">
+                  <classMoniker Id="17d07796-ec17-433a-b859-8d4baad9029f" LastKnownName="Player" />
+                  <elementDefinition Id="ac1117b4-835a-4415-975b-8037a0a5954f" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="78b97416-cf86-4531-8ceb-562940cda7aa" isDerived="false" sourceEndRoleName="" targetEndRoleName="m_hitRule" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="c3e9866a-7e23-4172-9653-aa38c5f66c06" LastKnownName="IHitStrategy" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="6787957f-9b96-426b-bad3-6c7a34c31ee7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="4d7e470b-e46e-4ca2-9251-f602ed9e2dc1" name="Lower">
+                            <elementDefinition Id="edc4b129-aba6-4599-a4e8-ec5857000fde" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="ed7bad71-2441-43a7-8a25-66b9c664995f" name="Upper">
+                            <elementDefinition Id="494267e8-4202-4b98-b59b-92b3acb7c22b" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="b39ecd56-3b42-41be-ad8e-6d3f1a941449" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="c92f8a1d-7238-4d0f-afb8-6fb41c75e15c" name="m_hitRule" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="c8bd8bdc-a05b-4157-a3f4-170792bd76ed" name="Lower">
+                            <elementDefinition Id="37e5731e-6c54-49f1-bb53-b68cd5e718fa" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="498adc4c-7d05-4a23-a8ff-d98db7aabfa7" name="Upper">
+                            <elementDefinition Id="c1f62afb-5e85-493d-ab31-4261b074e0a4" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="6c6849b2-d194-4a9e-bf8b-c267dc7af8dc" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="35331510-36fb-4c1f-8183-cefdc338b2a7" />
+                </association>
+                <association Id="f0d61a9c-adc9-420c-9c71-67c9c5284eba" isDerived="false" sourceEndRoleName=" " targetEndRoleName="m_newGameRule" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="e32f742e-5cfd-4a29-aa64-60ee4a586764" LastKnownName="INewGameStrategy" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ac094963-2115-4207-b1f0-6a042c872858" name=" " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="78f1c02d-760d-47c1-ab5c-f389bc70a941" name="Lower">
+                            <elementDefinition Id="8ab85b11-6406-4639-88bf-070bc9d429af" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="45db2373-56d4-436e-b4a8-7f93576b83da" name="Upper">
+                            <elementDefinition Id="d82f28cc-0be5-42aa-b783-2db28caed6dc" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="0a243975-744f-4722-9409-d02c91c95709" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="220f1df5-acfa-45f9-b924-e6353827d5be" name="m_newGameRule" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="b2c7d408-047b-4099-9485-0a1f4b6bb4fc" name="Lower">
+                            <elementDefinition Id="d12d7700-3564-4737-b7ee-e310d951cc69" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="6696466f-3755-425f-83f5-f40c90e5fefe" name="Upper">
+                            <elementDefinition Id="40c2708c-ed8c-42b5-be50-60bbc8fbe145" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="0db680b8-b13a-4cfd-874c-c6c603687c7f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="1650ea1a-6968-4e94-82a9-e6e841d07c8b" />
+                </association>
+                <association Id="4c1fc790-5f5f-4e75-ad64-8e7b83d91845" isDerived="false" sourceEndRoleName="" targetEndRoleName="m_deck" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="194bd4c4-f7c1-4ca2-bfa3-70731c70bce7" LastKnownName="Deck" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="f857723f-7224-4f4d-b700-6c2d63187abe" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="59f46811-e990-4e9f-9728-ca549c157230" name="Lower">
+                            <elementDefinition Id="699342a0-609b-4e46-bfec-e0049a9bd5a8" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="37e97077-0da1-432d-a8e2-5e09f2d37163" name="Upper">
+                            <elementDefinition Id="331b3406-e38b-472b-97e2-4e21136cda94" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="df02b2e3-4c80-4a42-8c12-261f961b8ba9" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="53331e04-db28-4f99-b26d-deb906c027cb" name="m_deck" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="c35740e7-9d71-4b96-b649-54071593141a" name="Lower">
+                            <elementDefinition Id="cf1bd6f4-608c-4eca-b153-0624ebb2a32b" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="1936c99a-3cab-4534-8200-c3e2091381be" name="Upper">
+                            <elementDefinition Id="48f08848-ebfa-43bc-a6aa-b3a51360f5b9" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="da98c79c-f34e-4e9e-b425-558bc06a6e06" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="e57045bc-7b13-49b4-8760-d3f0a1a89346" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="31855466-1820-46cd-b91a-1ff558d1586f" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="08739ce8-677c-41a8-b0cf-e6796231e3a0" />
+              <targetEnds>
+                <association Id="ab3a5f6b-81ef-4a8c-a1a8-69e3a1c557c7" isDerived="false" sourceEndRoleName="" targetEndRoleName="m_player" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="17d07796-ec17-433a-b859-8d4baad9029f" LastKnownName="Player" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a68cddf2-ae0f-46e8-a7de-5e924a001a39" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="9f60a31a-6421-4404-bd41-58a06d94e3c1" name="Lower">
+                            <elementDefinition Id="d0b09e90-7b3d-4d5e-9013-195a5d9334a5" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="a7ae45b4-6be6-4cc2-951d-4d2ad6a437b9" name="Upper">
+                            <elementDefinition Id="511ad21a-52e9-4b9e-843f-9b024975e150" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="3b65ad6b-adbb-475e-abb6-8d81929c8f34" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="00363a77-90d1-4e7f-a822-802d7ef8bddf" name="m_player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="239ea70b-ac7c-40b3-866c-7cdbdf3b45a5" name="Lower">
+                            <elementDefinition Id="067af30c-2ddf-4f88-b825-53414de7b830" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="df182129-2cee-4620-9b89-b2c01f7d9af1" name="Upper">
+                            <elementDefinition Id="541d3c2e-95ac-4ef1-97a6-86cb222f5eb2" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="de0351de-06b9-4461-bb96-cfba8b48bdd2" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="87296099-9a34-44e0-8455-4d19a7dd077d" />
+                </association>
+                <association Id="5db01d2c-c91b-4c38-aef0-ef04f067d8af" isDerived="false" sourceEndRoleName="" targetEndRoleName="m_dealer" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="28a7a0af-e549-494b-bd86-3f7a7b3963f0" LastKnownName="Dealer" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e4a1eb5f-8d2b-4b1b-bbd3-09c4f79f9f3e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="6e85940e-e70c-4f8a-9661-7fcdb0543c61" name="Lower">
+                            <elementDefinition Id="146fc10f-141c-496c-8f8e-d8b45cca482b" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="029a38ab-3326-4122-8d53-14f0d53b72cb" name="Upper">
+                            <elementDefinition Id="8f1a8e44-bd87-4bd4-af6a-78e7977830b6" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="aa1661d1-6536-4ebb-b035-49580429b39d" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e435a6f1-6a90-43f2-bd70-e1d12e14f8ec" name="m_dealer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="6013e0f4-bd61-4c53-b33e-0c890cd001ff" name="Lower">
+                            <elementDefinition Id="0141e4d9-f3dd-4d33-9566-25ad54b58e2f" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="ad389273-e5bd-43d0-8aa3-699831b6de81" name="Upper">
+                            <elementDefinition Id="89a04204-3ba0-4971-b7c0-9492f37db741" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="f1b1661f-eaaf-4eed-8fbb-5985d05fd455" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="6f0401ea-a50b-4210-bc7d-a026a10fd221" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="97957ede-4544-48a8-beec-6443ab956c2e" name="rules">
+              <elementDefinition Id="c453c530-6efa-4957-9d62-7cca90019d1a" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="c46766a0-850e-4a6c-9c26-4e5f9654b12b" name="AmericanNewGameStrategy" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="626e626d-f1c8-4379-8b67-f1bfcca61c56" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="0fa42dd8-843c-455d-94b5-817d299d0f2e">
+                        <interfaceMoniker Id="e32f742e-5cfd-4a29-aa64-60ee4a586764" LastKnownName="INewGameStrategy" />
+                        <elementDefinition Id="86035386-85f5-4b4d-864e-36a192b1dc9b" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="d657f867-1dee-46f6-9551-0f4d9c9e80f2" name="BasicHitStrategy" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="7f7945c2-00d1-4ff2-9261-fdd4e8156c06" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="3bc6ae0b-a109-44ae-8652-bc66cb5e3717">
+                        <interfaceMoniker Id="c3e9866a-7e23-4172-9653-aa38c5f66c06" LastKnownName="IHitStrategy" />
+                        <elementDefinition Id="6bd48b2a-6321-4195-ad4a-e2230c8bf149" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="2619ecdb-432c-4c89-b3d6-689a258a7c21" name="InternationalNewGameStrategy" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="1541902d-b83d-41c6-8d43-abb4d867a30d" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="fd5d2bf2-6cda-4520-b5d6-6dec80a7dcfe">
+                        <interfaceMoniker Id="e32f742e-5cfd-4a29-aa64-60ee4a586764" LastKnownName="INewGameStrategy" />
+                        <elementDefinition Id="85e6fc98-3aea-44e0-8816-8ba246381186" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="6985f3f4-261a-4bb6-bcb9-7a968589c4bf" name="RulesFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="274aad89-4b81-46c6-a61d-54ff6d7a1d51" />
+                    <suppliersInternal>
+                      <dependency Id="63977230-fba3-4679-af15-79ca3c8f54e4">
+                        <classMoniker Id="2619ecdb-432c-4c89-b3d6-689a258a7c21" LastKnownName="InternationalNewGameStrategy" />
+                        <elementDefinition Id="27958c9f-a6cb-4929-8b7f-9af03d169ada" />
+                      </dependency>
+                      <dependency Id="2f67c83a-28a0-4d14-93ea-be422d45f12a">
+                        <classMoniker Id="c46766a0-850e-4a6c-9c26-4e5f9654b12b" LastKnownName="AmericanNewGameStrategy" />
+                        <elementDefinition Id="2aa7438f-adca-4f5b-b841-bf65d21ffa3e" />
+                      </dependency>
+                      <dependency Id="d84686d4-c823-4c43-9180-be57162c95d1">
+                        <classMoniker Id="d657f867-1dee-46f6-9551-0f4d9c9e80f2" LastKnownName="BasicHitStrategy" />
+                        <elementDefinition Id="b84f68a1-bf94-4f25-968c-950ccefeeca8" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="c3e9866a-7e23-4172-9653-aa38c5f66c06" name="IHitStrategy" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="550cd927-6beb-4715-ac7e-1afec083ec6b" />
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="e32f742e-5cfd-4a29-aa64-60ee4a586764" name="INewGameStrategy" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="7f7445a6-4eaf-4d4b-893c-5243754ba636" />
+                  </Interface>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="bc1e7c9b-47fb-4ae6-9d4b-7122be8a558a" name="controller">
+        <elementDefinition Id="acdc0035-52b7-4186-ad24-770800e81d11" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="867693b0-3c2e-490a-93b0-fd4539dd47af" name="PlayGame" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a6917e36-d961-4204-9aba-91bb2eff919b" />
+              <suppliersInternal>
+                <dependency Id="ac2cd854-cee7-47e8-aa6a-1acc8074d57e">
+                  <interfaceMoniker Id="f1ce0db8-e039-4af4-aeaf-7ed31df4f4f1" LastKnownName="IView" />
+                  <elementDefinition Id="9005e116-bc4e-4496-9ac1-df5cee2ef38e" />
+                </dependency>
+                <dependency Id="82ebe1a5-cd3c-4280-8b4c-626210194c75">
+                  <classMoniker Id="31855466-1820-46cd-b91a-1ff558d1586f" LastKnownName="Game" />
+                  <elementDefinition Id="8e38dffa-b253-4815-baeb-df514e32673b" />
+                </dependency>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="08959b3d-3d0b-457a-ad6a-eb99cafd66af" name="view">
+        <elementDefinition Id="4367e02e-3403-4d35-8f93-91c5a27a49f6" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="0129330c-a01d-46b0-b2c1-3f16e666e44e" name="SimpleView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="afa99da5-525e-4ae4-a236-a8012ef9ef5d" />
+              <suppliersInternal>
+                <interfaceRealization Id="c15b8ba7-f324-4e57-a7d1-60c348bb4e05">
+                  <interfaceMoniker Id="f1ce0db8-e039-4af4-aeaf-7ed31df4f4f1" LastKnownName="IView" />
+                  <elementDefinition Id="ff7d3f8d-a246-4bb1-8c24-a998959af77a" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d38bff55-6166-4fac-81bb-bd76edec30ef" name="SwedishView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="efdb29fa-3d02-40f4-ae26-44a3d79df8f5" />
+              <suppliersInternal>
+                <interfaceRealization Id="be29de03-35d2-4f2c-afbc-39d1d6d560af">
+                  <interfaceMoniker Id="f1ce0db8-e039-4af4-aeaf-7ed31df4f4f1" LastKnownName="IView" />
+                  <elementDefinition Id="1df8f863-00dd-4dd2-b01c-2e5b09eed6f1" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="f1ce0db8-e039-4af4-aeaf-7ed31df4f4f1" name="IView" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="daa2b7a8-1024-4de0-8428-0008d3ffa08b" />
+              <suppliersInternal>
+                <dependency Id="2074237a-15ba-41ce-8d04-a6367e6f81e4">
+                  <classMoniker Id="cb5a73ba-d5e0-41b8-9003-aaced10eb299" LastKnownName="Card" />
+                  <elementDefinition Id="2f231c89-6947-4a76-90eb-d230987cc959" />
+                </dependency>
+              </suppliersInternal>
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="f5cb1417-511a-494a-aeba-09405b69bcbd" name="BlackJackModel">
+    <elementDefinition Id="46f1f7dc-7d54-44d9-b2ed-cc4ff28044bd" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="BlackJack.controller.PlayGame" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="14.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAgAAAABAAAAE=</HashCode>
+      <FileName>controller\PlayGame.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_game" />
+      <Field Name="m_view" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BlackJack.model.rules.AmericanNewGameStrategy" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="8" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\rules\AmericanNewGameStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BlackJack.model.rules.BasicHitStrategy" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="17.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>model\rules\BasicHitStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BlackJack.model.rules.Soft17Strategy" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="17.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>model\rules\Soft17Strategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BlackJack.model.rules.DealerWinnerStrategy" BaseTypeListCollapsed="true">
+    <Position X="4" Y="17.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgBAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\rules\DealerWinnerStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BlackJack.model.rules.InternationalNewGameStrategy" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="9.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\rules\InternationalNewGameStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BlackJack.model.rules.PlayerWinnerStrategy" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="17.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgBAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\rules\PlayerWinnerStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BlackJack.model.rules.RulesFactory">
+    <Position X="11" Y="5.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAIAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>model\rules\RulesFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlackJack.model.Card">
+    <Position X="9" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="BlackJack.model.Card.Color" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>model\Card.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="BlackJack.model.Card.Value" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>model\Card.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAIQEAACAAAAAAAgAAAA=</HashCode>
+      <FileName>model\Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlackJack.model.Dealer">
+    <Position X="0.5" Y="3.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAQAAAIAAAEAAIAABAABAAPAAAAAAQAAACAAAA=</HashCode>
+      <FileName>model\Dealer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_deck" />
+      <Field Name="m_hitRule" />
+      <Field Name="m_newGameRule" />
+      <Field Name="m_winnerRule" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="m_subscribers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BlackJack.model.Deck">
+    <Position X="5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAoAQAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>model\Deck.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="m_cards" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BlackJack.model.Game">
+    <Position X="0.5" Y="9.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAgAAAAAAAAoEAAAIBAALAgAAAAAAAACAAAA=</HashCode>
+      <FileName>model\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_dealer" />
+      <Field Name="m_player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BlackJack.model.Player">
+    <Position X="1" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAACAAAAAAAAAACIAAAAAAAIAAABAAAAAAAAAA=</HashCode>
+      <FileName>model\Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="m_hand" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BlackJack.view.SimpleView" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="20.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AQJAAEAAAAAAAAQAAAAAAAgAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>view\SimpleView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BlackJack.view.SwedishView" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="23.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AQJAAEAAAAAAAAQAAAAAAAgAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>view\SwedishView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="BlackJack.model.rules.IHitStrategy">
+    <Position X="7.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>model\rules\IHitStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BlackJack.model.rules.INewGameStrategy">
+    <Position X="7.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\rules\INewGameStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BlackJack.model.rules.IWinnerStrategy">
+    <Position X="5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\rules\IWinnerStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BlackJack.model.IGetHandListener">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>model\IGetHandListener.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BlackJack.view.IView">
+    <Position X="5.25" Y="9.25" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AQJAAEAAAAAAAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>view\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="BlackJack.view.Event">
+    <Position X="6.25" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAACIAAAAAAAAAAAAQA=</HashCode>
+      <FileName>view\IView.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

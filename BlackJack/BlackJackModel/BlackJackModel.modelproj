@@ -23,6 +23,13 @@
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="false" />
   <ItemGroup>
+    <Content Include="BlackJackDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BlackJackDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BlackJackDiagram.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Game_Stand.sequencediagram">
       <SubType>Content</SubType>
     </Content>
@@ -40,6 +47,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package_0950.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Program.cs">
       <SubType>Content</SubType>
     </Content>
     <Folder Include="ModelDefinition\" />

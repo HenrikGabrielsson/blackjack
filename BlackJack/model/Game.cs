@@ -16,6 +16,11 @@ namespace BlackJack.model
             m_player = new Player();
         }
 
+        public void Register(IGetHandListener a_subscriber)
+        {
+            m_dealer.Register(a_subscriber);
+        }
+
         public bool IsGameOver()
         {
             return m_dealer.IsGameOver(m_player);

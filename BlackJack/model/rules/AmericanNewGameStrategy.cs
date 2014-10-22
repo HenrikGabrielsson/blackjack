@@ -14,6 +14,22 @@ namespace BlackJack.model.rules
             a_dealer.GiveCards(a_dealer);
             a_dealer.GiveCards(a_player, true);
 
+            /*Card card4 = new Card(Card.Color.Clubs, Card.Value.Six);
+            a_player.DealCard(card4);
+            card4.Show(true);
+
+            Card card3 = new Card(Card.Color.Clubs, Card.Value.Two);
+            a_player.DealCard(card3);
+            card3.Show(true);
+
+            Card card = new Card(Card.Color.Clubs, Card.Value.Nine);
+            a_dealer.DealCard(card);
+            card.Show(true);
+
+            Card card2 = new Card(Card.Color.Clubs, Card.Value.King);
+            a_dealer.DealCard(card2);
+            card.Show(true);*/
+
             return true;
         }
 
