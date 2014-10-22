@@ -7,8 +7,8 @@
       <FileName>controller\PlayGame.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="m_game" />
       <Field Name="m_view" />
+      <Field Name="m_game" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
@@ -97,8 +97,8 @@
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="m_deck" />
-      <Field Name="m_hitRule" />
       <Field Name="m_newGameRule" />
+      <Field Name="m_hitRule" />
       <Field Name="m_winnerRule" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
@@ -174,7 +174,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="BlackJack.model.IGetHandListener">
-    <Position X="5" Y="3.25" Width="1.5" />
+    <Position X="5.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
       <FileName>model\IGetHandListener.cs</FileName>

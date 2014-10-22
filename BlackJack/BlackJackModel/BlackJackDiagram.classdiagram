@@ -13,6 +13,12 @@
       </profileInstance>
       <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
     </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2e991b42-99c7-4e39-b8b5-e7e2300b7dc8">
+      <profileInstance Id="8cfa5e8a-1696-473a-9eb9-14b3fda11e49" name="CSharpProfile">
+        <elementDefinition Id="86c7c9c1-0c53-4a05-9aee-705557f3c937" />
+      </profileInstance>
+      <elementDefinition Id="96415d4b-0fa2-44bc-8938-c96037b0c629" />
+    </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
@@ -118,6 +124,10 @@
                   <classMoniker Id="6985f3f4-261a-4bb6-bcb9-7a968589c4bf" LastKnownName="RulesFactory" />
                   <elementDefinition Id="ebcbd2dc-bbcb-4c6a-9cba-c8de4f9118c9" />
                 </dependency>
+                <interfaceRealization Id="ebe066e7-450d-4d10-81d8-0f9790470262">
+                  <interfaceMoniker Id="0fe72388-0d66-475e-ba96-9347262eff56" LastKnownName="IGetHandListener" />
+                  <elementDefinition Id="5c8ee6d8-8264-4729-ad34-53f9ad34feff" />
+                </interfaceRealization>
               </suppliersInternal>
               <generalsInternal>
                 <generalization Id="1597b562-a49e-435b-92f8-a318ea598889" isSubstitutable="false">
@@ -235,6 +245,11 @@
                   <elementDefinition Id="e57045bc-7b13-49b4-8760-d3f0a1a89346" />
                 </association>
               </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="44037748-d40a-472c-a8f5-f617ab9194fb" name="Notify" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bcc006e5-197a-4c50-9cca-7d852fb18304" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -385,6 +400,100 @@
               </packagedElements>
             </package>
           </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="0fe72388-0d66-475e-ba96-9347262eff56" name="IGetHandListener" visibility="Package" isAbstract="false" isLeaf="false">
+              <referencesInternal>
+                <reference Id="8a98f186-7382-4a27-b7b2-51fc7a68fefe" handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fhg222aa%2FDownloads%2FBlackJack_C%2523%2FBlackJack%2Fbin%2FDebug%2FBlackJack.exe Namespace%3DBlackJack.model Type%3DIGetHandListener" tag="ViewCode">
+                  <elementDefinition Id="0ac396fe-2a0b-4987-bca7-578429915c61" />
+                </reference>
+              </referencesInternal>
+              <appliedStereotypesInternal>
+                <stereotypeInstance Id="3a917013-1c36-485a-af5d-d04d7214a335" name="interface" profile="CSharpProfile">
+                  <elementDefinition Id="cfd9a9c9-6fc5-4eec-8490-5bbd5b5c126e" />
+                  <propertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="9e6fc55e-ead9-4343-84bb-992dc54c69af">
+                      <propertyInstance Id="89652fbe-5c9a-43a5-9a60-a534cb4e04df" name="ClrAttributes">
+                        <elementDefinition Id="4abe4e6a-c1b4-4990-98ea-f3a39a5eee70" />
+                      </propertyInstance>
+                      <elementDefinition Id="619126ca-1e76-4d0e-9447-fdff00657527" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="6285330d-0630-4118-a183-02fb13cabcd0">
+                      <propertyInstance Id="493e8744-e6dc-4402-aaf5-746b1b229d8a" name="IsPartial" value="false">
+                        <elementDefinition Id="97307d2c-8b78-42ca-9816-42360746de91" />
+                      </propertyInstance>
+                      <elementDefinition Id="19c12e4a-0553-40fc-8258-a9d4c92c6a17" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="577da34f-02f0-47d2-b3fb-c717ddf4c798">
+                      <propertyInstance Id="eedb52b4-0b49-4b4d-9ef1-83c035892923" name="IsUnsafe" value="false">
+                        <elementDefinition Id="4f7196cd-a0c8-4928-9411-dd04157573cc" />
+                      </propertyInstance>
+                      <elementDefinition Id="95a49f48-a677-4b85-bbce-3ecd0044157f" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="7bd59d51-0533-4f4c-8b71-8fb624ca4e6b">
+                      <propertyInstance Id="797a1f68-dcb0-4511-a2dc-3b86c7c7e6ae" name="PackageVisibility" value="internal">
+                        <elementDefinition Id="1bd508b1-2e44-483d-83ff-f01736278bfb" />
+                      </propertyInstance>
+                      <elementDefinition Id="a2da09db-e61c-4960-a67d-1f44c07a669a" />
+                    </stereotypeInstanceHasPropertyInstances>
+                  </propertyInstances>
+                </stereotypeInstance>
+              </appliedStereotypesInternal>
+              <elementDefinition Id="0d489213-adcc-4ef5-a37f-485ed2ad6fc1" />
+              <ownedOperations>
+                <operation Id="ecb968e1-4333-45bf-b539-fda4a4e62ce7" name="Notify" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <referencesInternal>
+                    <reference Id="2d724c3b-1e6a-4c7f-b7bb-0786bf5b5258" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fhg222aa%2FDownloads%2FBlackJack_C%2523%2FBlackJack%2Fbin%2FDebug%2FBlackJack.exe Namespace%3DBlackJack.model Type%3DIGetHandListener Member%3DNotify" tag="ViewCode">
+                      <elementDefinition Id="ca3d6642-8a83-4a29-bea3-951aedbf49a0" />
+                    </reference>
+                  </referencesInternal>
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="14645a72-3327-4faa-b82a-01c7c6435082" name="method" profile="CSharpProfile">
+                      <elementDefinition Id="5e70863a-ffcb-4199-83af-0555cf143e4a" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="fc193ac9-81a2-4e1e-b22b-1229e524852f">
+                          <propertyInstance Id="e70eb5ea-9051-4c76-bc71-5dcfba8773af" name="ClrAttributes">
+                            <elementDefinition Id="68840aae-4af3-4535-bfd7-188e277b2aa7" />
+                          </propertyInstance>
+                          <elementDefinition Id="6a707f68-b4a7-4813-b19d-c3ce81853b21" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="91daabfa-7e7c-4d0e-90eb-2b3b05e6486d">
+                          <propertyInstance Id="95e48bf1-eab2-40b9-a4f2-539ceb30e2fe" name="IsPartial" value="false">
+                            <elementDefinition Id="e1c95432-9048-49ad-bdd1-26c559feb3c8" />
+                          </propertyInstance>
+                          <elementDefinition Id="f928b24a-9002-4be9-8395-795c817edf85" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="975c16d7-4d98-4f59-b2d0-8a6a0d8a30a2">
+                          <propertyInstance Id="1b4066a0-e469-4679-8422-431c2ca83c2f" name="IsUnsafe" value="false">
+                            <elementDefinition Id="ca8e7d09-69ec-46cc-9de4-fc7cef78487c" />
+                          </propertyInstance>
+                          <elementDefinition Id="579ac14b-0889-4fa7-a77e-6907d670e355" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="17ea71d7-4ea0-484e-990d-f02c71196dc4">
+                          <propertyInstance Id="212e0565-224e-4c1f-b789-9cf5506c1f87" name="Inheritance" value="none">
+                            <elementDefinition Id="6e4dd023-5e56-4171-b57d-214f79181c4c" />
+                          </propertyInstance>
+                          <elementDefinition Id="fa069fde-b64d-4c3a-99c3-140731f3fc6e" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="50a65e2c-f882-4d22-b215-1ee270abd24d">
+                          <propertyInstance Id="b6884695-9c4a-45d2-87be-913a84af7208" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="10a6c425-d0ef-4282-9ca6-d951d67f2997" />
+                          </propertyInstance>
+                          <elementDefinition Id="99772a4f-3f1a-4bc2-b585-cf382038d284" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="3f3f6052-125e-4338-a4f1-11e0407e1e66">
+                          <propertyInstance Id="1bfa9932-e350-4f34-80de-c79dc8fcba39" name="params" value="false">
+                            <elementDefinition Id="0c280ac9-156d-4489-99b9-238eb0b9ffce" />
+                          </propertyInstance>
+                          <elementDefinition Id="2960a8e6-7dd4-4bc1-8c0b-06dbafd393b0" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="22b3ffa2-3cc2-4d80-92e3-38914cef3906" />
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
@@ -404,7 +513,16 @@
                   <classMoniker Id="31855466-1820-46cd-b91a-1ff558d1586f" LastKnownName="Game" />
                   <elementDefinition Id="8e38dffa-b253-4815-baeb-df514e32673b" />
                 </dependency>
+                <interfaceRealization Id="f96c1829-6924-4f20-96ea-dd4c7381ff11">
+                  <interfaceMoniker Id="0fe72388-0d66-475e-ba96-9347262eff56" LastKnownName="IGetHandListener" />
+                  <elementDefinition Id="7e3b6788-43b0-475c-bf14-42494533141e" />
+                </interfaceRealization>
               </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="b587de78-54ef-436f-8e68-269cb92c03a7" name="Notify" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="eeff308f-216e-4af1-b50d-f03adf0cad76" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
         </packagedElements>

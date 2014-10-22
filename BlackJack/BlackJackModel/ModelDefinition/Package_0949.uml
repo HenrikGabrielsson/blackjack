@@ -12,6 +12,13 @@
         isLeaf="false"
         isActiveClass="false">
         <suppliersInternal>
+          <interfaceRealization
+            Id="7e3b6788-43b0-475c-bf14-42494533141e">
+            <interfaceMoniker
+              Id="0d489213-adcc-4ef5-a37f-485ed2ad6fc1"
+              LastKnownName="IGetHandListener"
+              LastKnownLocation="Package1_0950.uml" />
+          </interfaceRealization>
           <dependency
             Id="9005e116-bc4e-4496-9ac1-df5cee2ef38e">
             <interfaceMoniker
@@ -27,6 +34,16 @@
               LastKnownLocation="Package1_0950.uml" />
           </dependency>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="eeff308f-216e-4af1-b50d-f03adf0cad76"
+            name="Notify"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>
