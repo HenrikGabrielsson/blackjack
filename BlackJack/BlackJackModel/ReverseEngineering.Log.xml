@@ -6,11 +6,25 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2014-10-22T16:20:48" Importance="High" Text="Reverse Engineering Started." />
-  <Message Timestamp="2014-10-22T16:20:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack' -  (Package)" />
-  <Message Timestamp="2014-10-22T16:20:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model' -  (Package)" />
-  <Message Timestamp="2014-10-22T16:20:49" Importance="Medium" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::IGetHandListener' -  (Interface)" />
-  <Message Timestamp="2014-10-22T16:20:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::IGetHandListener::Notify' -  (Operation)" />
-  <Message Timestamp="2014-10-22T16:20:49" Importance="High" Text="(1) type(s) fully reverse engineered." />
-  <Message Timestamp="2014-10-22T16:20:49" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+  <Message Timestamp="2014-10-29T11:50:24" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack' -  (Package)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model' -  (Package)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::Dealer' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::Player' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::rules' -  (Package)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Medium" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::rules::DealerWinnerStrategy' -  (Class)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::rules::DealerWinnerStrategy::DealerWinnerStrategy' -  (Operation)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::rules::DealerWinnerStrategy::g_maxScore' -  (Property)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::rules::DealerWinnerStrategy::GetMaxScore' -  (Operation)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::rules::DealerWinnerStrategy::IsDealerWinner' -  (Operation)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::rules::DealerWinnerStrategy::IsDealerWinner::a_dealer' -  (Parameter)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::rules::DealerWinnerStrategy::IsDealerWinner::a_player' -  (Parameter)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'BlackJackModel::BlackJack::model::rules::IWinnerStrategy' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: BlackJackModel::BlackJack::model::rules::DealerWinnerStrategy to BlackJackModel::BlackJack::model::rules::IWinnerStrategy (InterfaceRealization)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: BlackJackModel::BlackJack::model::Dealer to BlackJackModel::BlackJack::model::Player (Generalization)" />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="High" Text="(3) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2014-10-29T11:50:25" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
 </Log>

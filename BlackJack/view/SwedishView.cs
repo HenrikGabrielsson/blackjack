@@ -38,6 +38,10 @@ namespace BlackJack.view
                 {
                     return Event.Quit;
                 }
+                else
+                {
+                    r = System.Console.ReadLine();
+                }
             }
         }
 
